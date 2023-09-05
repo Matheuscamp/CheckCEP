@@ -8,18 +8,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Check CEP</h1>
-      <p>Digite o CEP que você deseja checar</p>
-      <input type="text" id="parametro" required />
-      <button onclick="buscarCEP()">Buscar</button>
+    <div class="background">
+      <div class="container">
+        <h1>Check CEP</h1>
+        <p>Digite o CEP que você deseja checar</p>
+        <input
+          class="input"
+          type="text"
+          id="parametro"
+          placeholder="Ex.: 31370450"
+          required
+        />
+        <div class="margin-top"></div>
+        <button onclick="buscarCEP()"><span>Buscar</span></button>
+        <div class="margin-top"></div>
 
-      <br />
-      <span id="rua"></span>
-      <br />
-      <span id="cidade"></span>
-      <br />
-      <span id="estado"></span>
+        <div class="resultados">
+          <span id="rua"></span>
+          <span id="cidade"></span>
+          <span id="estado"></span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
